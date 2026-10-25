@@ -1,6 +1,6 @@
 # Simulador PID en tiempo real
 
-Aplicación web que simula un sistema de control PID sobre una planta [estanque de agua / control de temperatura]. Puedes ajustar Kp, Ki y Kd con sliders y ver en vivo cómo responde el sistema.
+Aplicación web que simula un sistema de control PID sobre una planta de primer orden (por ejemplo, un estanque o un sistema térmico). Puedes ajustar Kp, Ki y Kd con sliders y ver en vivo cómo responde el sistema.
 
 ![Demo](docs/demo.gif)
 
@@ -8,12 +8,12 @@ Aplicación web que simula un sistema de control PID sobre una planta [estanque 
 
 - Simula la respuesta de una planta ante un setpoint configurable
 - Permite ajustar Kp, Ki y Kd en tiempo real
-- Grafica la salida, el setpoint y el error
+- Grafica la salida, el setpoint y la señal de control
 - Calcula métricas: sobreimpulso, tiempo de establecimiento y error en régimen permanente
 
 ## Tecnologías
 
-- **Backend:** Python, FastAPI, NumPy, SciPy
+- **Backend:** Python, FastAPI, Pydantic
 - **Frontend:** HTML, JavaScript, Chart.js
 - **Calidad:** pytest, Ruff, GitHub Actions
 - **Despliegue:** Docker
