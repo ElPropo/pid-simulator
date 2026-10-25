@@ -4,11 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simulador PID</title>
+  <link rel="icon" href="data:,">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.js"></script>
 </head>
 <body>
-  <h1>Simulador PID</h1>
-  <p>Proyecto en construcción.</p>
+  <header>
+    <h1>Simulador PID</h1>
+    <p>Ajusta las ganancias y mira cómo responde el sistema ante un escalón en el setpoint.</p>
+  </header>
+
+  <main>
+    <aside class="panel">
+      <h2>Controlador</h2>
+      <div id="controller-controls"></div>
+
+      <h2>Planta</h2>
+      <div id="plant-controls"></div>
+
+      <button id="reset" type="button">Restablecer valores</button>
+    </aside>
+
+    <section class="results">
+      <div class="metrics">
+        <div class="metric">
+          <span class="metric-label">Sobreimpulso</span>
+          <span class="metric-value" id="m-overshoot">–</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Tiempo de establecimiento (±2 %)</span>
+          <span class="metric-value" id="m-settling">–</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Error en régimen permanente</span>
+          <span class="metric-value" id="m-error">–</span>
+        </div>
+      </div>
+
+      <p id="error" class="error" hidden></p>
+
+      <div class="panel chart-box"><canvas id="chart-y"></canvas></div>
+      <div class="panel chart-box small"><canvas id="chart-u"></canvas></div>
+    </section>
+  </main>
+
   <script src="app.js"></script>
 </body>
 </html>
