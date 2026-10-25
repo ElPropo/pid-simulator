@@ -59,5 +59,6 @@ El controlador implementa la ley de control PID discreta. El detalle del modelo 
 
 ## Autor
 
-Emmanuel Andaur — Estudiante de Ingeniería en Informática, UCSH
-[LinkedIn] · [GitHub]
+**Emmanuel Andaur** — Estudiante de Ingeniería en Informática, Universidad Católica Silva Henríquez
+
+[LinkedIn](https://www.linkedin.com/in/emmanuel-andaur-9019042b6/) · [GitHub](https://github.com/ElPropo)
