@@ -22,11 +22,13 @@ Aplicación web que simula un sistema de control PID sobre una planta [estanque 
 
 ## Cómo correrlo en local
 
+Requiere Python 3.10 o superior.
+
 ```bash
-git clone https://github.com/[tu-usuario]/pid-simulator.git
+git clone https://github.com/ElPropo/pid-simulator.git
 cd pid-simulator
 python3 -m venv .venv
-source .venv/bin/activate
+source .venv/bin/activate   # en Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
