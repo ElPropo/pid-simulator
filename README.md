@@ -4,8 +4,6 @@ Aplicación web que simula un sistema de control PID sobre una planta [estanque 
 
 ![Demo](docs/demo.gif)
 
-🔗 **Demo online:** [link cuando lo despliegues]
-
 ## ¿Qué hace?
 
 - Simula la respuesta de una planta ante un setpoint configurable
